@@ -5,6 +5,7 @@ export const siteConfig = {
   bio: "TODO: Replace this bio with 2-3 sentences about you — what you build, what you care about, and what you're looking for next.",
   location: "TODO: Your location",
   email: "TODO: your@email.com",
+  profileImage: "/clinton.jpg",
 };
 
 export const socials = [

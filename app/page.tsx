@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig, socials, skills, projects } from "../lib/data";
 
 export default function Home() {
@@ -16,17 +17,29 @@ export default function Home() {
       </header>
 
       <main className="container">
-        <div className="hero">
-          <div className="eyebrow">Portfolio</div>
-          <h1>
-            Hi, I&apos;m {siteConfig.name}.
-            <br />
-            {siteConfig.role} — {siteConfig.tagline}
-          </h1>
-          <p>{siteConfig.bio}</p>
-          <div className="cta-row">
-            <a className="btn" href="#projects">View my work</a>
-            <a className="btn-ghost" href="#contact">Get in touch</a>
+        <div className="hero hero-with-photo">
+          <div className="hero-text">
+            <div className="eyebrow">Portfolio</div>
+            <h1>
+              Hi, I&apos;m {siteConfig.name}.
+              <br />
+              {siteConfig.role} — {siteConfig.tagline}
+            </h1>
+            <p>{siteConfig.bio}</p>
+            <div className="cta-row">
+              <a className="btn" href="#projects">View my work</a>
+              <a className="btn-ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div className="hero-photo">
+            <Image
+              src={siteConfig.profileImage}
+              alt={`Portrait of ${siteConfig.name}`}
+              width={320}
+              height={400}
+              priority
+              className="profile-img"
+            />
           </div>
         </div>
 
