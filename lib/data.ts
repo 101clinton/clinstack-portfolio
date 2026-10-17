@@ -3,15 +3,14 @@ export const siteConfig = {
   role: "Developer",
   tagline: "I build clean, fast web experiences.",
   bio: "TODO: Replace this bio with 2-3 sentences about you — what you build, what you care about, and what you're looking for next.",
-  location: "TODO: Your location",
-  email: "TODO: your@email.com",
+  location: "Buea, Cameroon",
+  email: "clintonlikuka@gmail.com",
   profileImage: "/clinton.jpg",
 };
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/101clinton" },
-  { label: "LinkedIn", href: "TODO: https://linkedin.com/in/your-handle" },
-  { label: "X / Twitter", href: "TODO: https://x.com/your-handle" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/clintonlikuka" },
 ];
 
 export const skills = [
