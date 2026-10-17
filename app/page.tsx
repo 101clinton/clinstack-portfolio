@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { siteConfig, socials, skills, projects } from "../lib/data";
+import { profileImageDataUrl } from "../lib/profile-image";
 
 export default function Home() {
   return (
@@ -33,11 +34,12 @@ export default function Home() {
           </div>
           <div className="hero-photo">
             <Image
-              src={siteConfig.profileImage}
+              src={profileImageDataUrl}
               alt={`Portrait of ${siteConfig.name}`}
               width={320}
-              height={400}
+              height={483}
               priority
+              unoptimized
               className="profile-img"
             />
           </div>
